@@ -1,0 +1,53 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+{% include 'navbar.html' %}
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <a href="http://ajithmovie.pythonanywhere.com/">
+    <div class="card" style="margin-left:200px;">
+      <img src="{% static 'image/movie.jpg' %}" class="card-img-top" height="200px" width="100%" alt="...">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">Movie</h5>
+        <p class="card-text">project</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <a href="http://ajith1234.pythonanywhere.com/">
+      <img src="{% static 'image/todo.png' %}" class="card-img-top" height="200px" alt="...">
+      </a>
+        <div class="card-body">
+        <h5 class="card-title">Todo</h5>
+        <p class="card-text">project</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card" style="margin-left:200px;">
+      <a href="http://ajithmedishop.pythonanywhere.com/">
+      <img src="{% static 'image/mediport.jpg' %}" class="card-img-top" alt="..." height="200px">
+      </a>
+        <div class="card-body">
+        <h5 class="card-title">Online Medishop</h5>
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <a href="http://ajithecommerce.pythonanywhere.com/">
+      <img src="{% static 'image/ecoport.png' %}" class="card-img-top" alt="..." height="200px">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title">Ecommerce</h5>
+        <p class="card-text">project</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
